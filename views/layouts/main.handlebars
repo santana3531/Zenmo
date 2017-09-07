@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="910832319473-mhopijodd7ntiltds1iucqnnu0bucqdg.apps.googleusercontent.com">
+    
+    <title>Zenmo</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/reset.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:800i" rel="stylesheet">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900i" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar open-->
+    <nav class="z-depth-0">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"><img src="img/green_logo.png" height="50px" width="50px">Zenmo</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#"><i class="material-icons left" title="Balance">attach_money</i>{{this.current_balance}}</a></li>
+                <li><a href="#"><i class="material-icons left" title="User">account_box</i>{{userName}}</a></li>
+                <li><a href="#" title="Sign Out">Sign Out</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#">Current Balance: {{balance}}</a></li>
+                <li><a href="#" title="User">User: {{userName}}</a></li>
+                <li><a href="#">Sign out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar close-->
+<br />
+<br />
+
+    {{{body}}}
+<br />
+<br />
+
+</body>
+<!-- Footer -->
+<footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container center white-text">
+                   Powered by Nunchuk Robots © 2017
+                </div>
+            </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js">{{!}}</script>
+<script src="feed.js"><{{!}}/script>
+<script src="google-login.js"></script>
+
+
+
+
+</html>

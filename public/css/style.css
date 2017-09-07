@@ -1,0 +1,97 @@
+html {
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  color: white;
+}
+
+body {
+  background-color: grey;
+}
+
+.container .row {
+  margin-top: 10px;
+}
+.z-depth-0 {
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+}
+
+nav .brand-logo.center {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+nav .nav-wrapper {
+  background-color: grey;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    padding-right: 50px;
+    list-style-type: none;
+}
+
+.footer {
+  font-size: 10px;
+  color: white;
+  display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-signin2 {
+  height: 36px;
+  width: 120px;
+  margin: 0px 0px 0px 0px;
+  padding-left: 45%;
+}
+
+.card .card-action {
+    position: relative;
+    /* margin: 5%; */
+    background-color: inherit;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 16px 24px;
+}
+
+
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+}
+
+#login-button {
+  margin-left: 25%;
+}
+
+#login-container{
+  margin-top: 30%;
+}
+/* label focus color */
+ .input-field input:focus + label {
+   color: green !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid white !important;
+   box-shadow: 0 1px 0 0 white !important
+ }
+
+.card .card-title {
+  font-weight: bold;
+}
+
+ .card-content {
+  color: black;
+ }
+

@@ -1,0 +1,54 @@
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="910832319473-mhopijodd7ntiltds1iucqnnu0bucqdg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<div class="container">
+    <a href="#" onclick="signOut();">Sign out</a>
+    <br />
+    <br />
+
+    <div class="row" id="box">
+        <!--open payment form-->
+        <form class="col s12">
+            <!--open username input-->
+            <div class="row">
+                <div class="input-field col s10">
+                    <input placeholder="To:" title="Enter a friend's username" id="username" type="text" class="validate">
+                </div>
+                <div class="col s2"></div>
+            </div>
+            <!--close username input-->
+            <!--open amount & buttons input-->
+            <div class="row">
+                <div class="col s5 input-field">
+                    <!--update the currency input to materialize theme-->
+                    <input placeholder="$" id="amount" type="number">
+                </div>
+                <div class="col s2"></div>
+                <div class="col s5">
+                    <a id="pay" class="btn" title="Send Payment">Pay</a>
+                    <a id="request" class="btn" title="Send Request">Request</a>
+                </div>
+            </div>
+            <!--close amount & buttons input-->
+        </form>
+        <!--close payment form-->
+    </div>
+    <!--open recent transactions card-->
+    <div class="row">
+        <div class="col s12">
+            <div class="card transactions-card">
+                <div class="card-content">
+                    <span class="card-title">Recent Transactions</span>
+                    <hr>
+                   {{#each Transaction}}
+                    <p> {{this.payer_email}} paid ${{this.dollar_amount}} to {{this.payee_email}} | {{this.createdAt}}</p>
+                    <br>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--close recent transactions card-->
+</div>
